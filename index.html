@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon-mood-tracker.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- First Container: Calendar and Mood Selection -->
+        <div class="first-container">
+            <!-- Calendar Container -->
+            <div class="first calendar-container">
+                <!-- Calendar Header: Navigation and Month Display -->
+                <div class="calendar-header">
+                    <div class="nav-buttons prev-button" id="backButton">
+                        <img src="./assets/arrow-back (1).svg" alt="previous-arrow">
+                    </div> 
+                    <div class="month-year" id="monthDisplay"></div>
+                    <div class="nav-buttons next-button" id="nextButton">
+                        <img src="./assets/arrow-next.svg" alt="next-arrow">
+                    </div> 
+                </div>
+                <!-- Calendar Body: Weekdays and Dates -->
+                <div class="calendar-body">
+                    <div id="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thr</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div id="dates"></div>
+                </div>
+            </div>
+            <!-- Mood Selection Container -->
+            <div class="first mood-container">
+                <!-- Mood Headers: Date and Question -->
+                <div class="mood-headers">
+                    <div class="today">
+                        <p class="today-text">05 Jan 2025</p>
+                    </div >
+                    <div class="mood-question-container">
+                        <p class="mood-question">What's your Mood <span class="today-mood">TODAY</span>?</p> 
+                    </div>   
+                </div>
+                <!-- Mood Grid: Options to select mood -->
+                <div class="all-moods">
+                    <div class="mood-grid">
+                        <div class="selected-mood">
+                            <img class="selected-img" src="./assets/Question-mark.png" alt="happy-mood">
+                        </div>
+                        <div class="small-mood empty"></div>
+                        <div class="small-mood excited-mood">
+                            <img class="options-img excited-mood-img" src="./assets/excited-mood.png" alt="excited-mood">
+                        </div>
+                        <div class="small-mood angry-mood">
+                            <img class="options-img angry-mood-img" src="./assets/angry-mood.png" alt="angry-mood">
+                        </div>
+                        <div class="small-mood happy-mood">
+                            <img class="options-img happy-mood-img" src="./assets/happy-mood.png" alt="happy-mood">
+                        </div>
+                        <div class="small-mood worried-mood">
+                            <img class="options-img worried-mood-img" src="./assets/worried-mood.png" alt="worried-mood">
+                        </div>
+                        <div class="small-mood sad-mood">
+                            <img class="options-img sad-mood-img" src="./assets/sad-mood.png" alt="sad-mood">
+                        </div>
+                        <div class="small-mood neutral-mood">
+                            <img class="options-img neutral-mood-img" src="./assets/neutral-mood.png" alt="neutral-mood">
+                        </div>
+                        <div class="small-mood empty"></div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!-- Second Container: Mood Indices -->
+        <div class="second-container">
+            <!-- Happy Index -->
+            <div class="status happy-container">
+            <div class="index-heading">
+                <h3>Happines Index</span></h3>
+            </div> 
+              <div class="status-contents">
+                  <div class="progress-bar">
+                    <div class="status-moods">
+                        <p class="index-percentage">0%</p>
+                      <img class="happy-status mood-img" src="./assets/happy-mood.png" alt="happy-mood">
+                  </div>
+                      <div class="progress happy-progress"></div>
+                  </div>
+                  
+              </div>
+            </div>
+            <!-- Sad Index -->
+            <div class="status sad-container">
+          <div class="index-heading">
+              <h3>Sadness Index</h3>
+          </div> 
+              <div class="status-contents">
+                  <div class="progress-bar">
+                    <div class="status-moods">
+                        <p class="index-percentage">0%</p>
+                      <img class="sad-status mood-img" src="./assets/sad-mood.png" alt="sad-mood">
+                  </div>
+                      <div class="progress sad-progress"></div>
+                  </div>
+                  
+              </div>
+            </div>
+            <!-- Neutral Index -->
+            <div class="status neutral-container">
+              <div class="index-heading">
+                <h3>Neutral Index</h3>
+              </div> 
+              <div class="status-contents">
+                  <div class="progress-bar">
+                    <div class="status-moods">
+                        <p class="index-percentage">0%</p>
+                      <img class="neutral-status mood-img" src="./assets/neutral-mood.png" alt="neutral-mood">
+                  </div>
+                      <div class="progress neutral-progress"></div>
+                  </div>
+                  
+              </div>
+            </div>
+            <!-- Angry Index -->
+            <div class="status angry-container">
+            <div class="index-heading">
+                <h3>Anger Index</h3>
+            </div> 
+              <div class="status-contents">
+                  <div class="progress-bar">
+                    <div class="status-moods">
+                        <p class="index-percentage">0%</p>
+                      <img class="angry-status mood-img" src="./assets/angry-mood.png" alt="angry-mood">
+                  </div>
+                      <div class="progress angry-progress"></div>
+                  </div>
+                  
+              </div>
+            </div>
+            <!-- Excited Index -->
+            <div class="status excited-container">
+              <div class="index-heading">
+                <h3>Excitment Index</h3>
+              </div>
+              <div class="status-contents">
+                  <div class="progress-bar">
+                    <div class="status-moods">
+                        <p class="index-percentage">0%</p>
+                      <img class="excited-status mood-img" src="./assets/excited-mood.png" alt="excited-mood">
+                  </div>
+                      <div class="progress excited-progress"></div>
+                  </div>
+                  
+              </div>
+            </div>
+            <!-- Worried Index -->
+            <div class="status worried-container">
+              <div class="index-heading">
+                <h3>Worry Index</h3>
+              </div> 
+                <div class="status-contents">
+                  <div class="progress-bar">
+                    <div class="status-moods">
+                        <p class="index-percentage">0%</p>
+                      <img class="worried-status mood-img" src="./assets/worried-mood.png" alt="worried-mood">
+                  </div>
+                      <div class="progress worried-progress"></div>
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+        <!-- Third Container: Spotify and Graph -->
+        <div class="third-container">
+            <!-- Spotify Section -->
+            <div class="third">
+                <!-- Spotify Header -->
+                <div class="spotify-header">
+                    <div class="Heading-div">
+                        <p id="heading">Playlist Recommendation</p>
+                    </div>
+                    <p class="tagline">Your Mood, Your Music 🎵</p>
+                </div>
+                <!-- Spotify Card Container -->
+                <div class="Spotify-card-container">
+                    <iframe id="spotify-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2v8dbUhRp5m3ssj4PeBzCq?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+            <!-- Graph Section -->
+            <div class="third graph-container">
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
