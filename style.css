@@ -1,140 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
 
 /* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Catamaran", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Catamaran", sans-serif;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    scroll-behavior: smooth;
-    color: #202123;
-    background-color: #fffef4;
-    background-blend-mode: normal; 
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  color: #202123;
+  background-color: #fffef4;
+  background-blend-mode: normal;
 }
 
 /* Main Container Styles */
-.main-container{
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    padding: 50px;
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
 }
 
 /* First Container Styles: Calendar and Mood Selection */
-.first-container{
-    width: 100%;
-    height: 500px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-
+.first-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 /* Styles for elements within the first container */
-.first{
-    width: 50%;
-    height: 500px;
-    border-radius: 20px;
-    background-color: rgb(238, 238, 241);
-    background-image: 
-        radial-gradient(circle at 20% 10%, #00d527b3 5%, transparent 35%), 
-        radial-gradient(circle at 50% 10%, #C0FFF9B3 13%, transparent 40%), 
-        radial-gradient(circle at 40% 90%, #ff9500 3%, transparent 40%);
-    background-blend-mode: overlay;
+.first {
+  width: 50%;
+  height: 500px;
+  border-radius: 20px;
+  background-color: rgb(238, 238, 241);
+  background-image: radial-gradient(
+      circle at 20% 10%,
+      #00d527b3 5%,
+      transparent 35%
+    ),
+    radial-gradient(circle at 50% 10%, #c0fff9b3 13%, transparent 40%),
+    radial-gradient(circle at 40% 90%, #ff9500 3%, transparent 40%);
+  background-blend-mode: overlay;
 }
 
 /* Calendar Container Styles */
 .calendar-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 /* Calendar Header Styles */
 .calendar-header {
-    height: 15%;
-    width: 100%;
-    display:flex;
-    flex-direction: row ;
-    justify-content:space-evenly;
-    align-items: center;   
-    padding: 12px 18px;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px 18px;
 }
 
 /* Month and Year Display Styles */
-.month-year{
-    height: 100%;
-    width: 50%;
-    background-color: #202123; 
-    border-radius: 20px;
-    color: #fffffff5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 700;
+.month-year {
+  height: 100%;
+  width: 50%;
+  background-color: #202123;
+  border-radius: 20px;
+  color: #fffffff5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 /* Navigation Buttons Styles */
-.nav-buttons{
-    height: 100%;
-    width: 10%;
-    background-color: #202123; 
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; 
+.nav-buttons {
+  height: 100%;
+  width: 10%;
+  background-color: #202123;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* Calendar Body Styles */
 .calendar-body {
-    height: 85%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    color: #636465da;
-    font-weight: 600;
-    justify-content: flex-start;
+  height: 85%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  color: #636465da;
+  font-weight: 600;
+  justify-content: flex-start;
 }
 
 /* Dates Grid Styles */
 #dates {
-    width: 100%;
-    height: 100%;
-    display: grid; /* Changed to CSS Grid */
-    grid-template-columns: repeat(7, 1fr); /* Create 7 columns */
-    column-gap: 5px ; /* Adjust gap as needed */
-    row-gap: 10px;
-    justify-items: center; /* Center items horizontally */
+  width: 100%;
+  height: 100%;
+  display: grid; /* Changed to CSS Grid */
+  grid-template-columns: repeat(7, 1fr); /* Create 7 columns */
+  column-gap: 5px; /* Adjust gap as needed */
+  row-gap: 10px;
+  justify-items: center; /* Center items horizontally */
 }
 
 /* Day Styles */
 .day {
-    width: 90%;
-    padding: 5px;
-    box-sizing: border-box;
-    background-color: white;
-    box-shadow: 0px 0px 3px #CBD4C2;
-    display: flex;           /* Keep horizontal layout */
-    justify-content: center;   /* Center the image horizontally */
-    align-items: center;      /* Center vertically */
-    font-size: 14px;
-    border-radius: 10px;
+  width: 90%;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0px 0px 3px #cbd4c2;
+  display: flex; /* Keep horizontal layout */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 14px;
+  border-radius: 10px;
 }
 
 /* Day Image Styles */
 .day img {
-    height: 30px;
-    width: 30px;
-    margin-left: 5px;   /* Add space to the left of the image */
+  height: 30px;
+  width: 30px;
+  margin-left: 5px; /* Add space to the left of the image */
 }
 
 /* Weekdays Styles */
@@ -154,348 +156,492 @@ body {
 
 /* Current Day Style */
 .day + #currentDay {
-  background-color:#fecbcb;
+  background-color: #fecbcb;
 }
 
 /* Mood Container Styles */
 .mood-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 /* Mood Header Styles */
-.mood-headers{
-    height: 15%;
-    width: 100%;
-    display:flex;
-    flex-direction: row ;
-    justify-content:space-evenly;
-    align-items: center;
+.mood-headers {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* Today's Date Styles */
-.today{
-    height: 60%;
-    width: 35%;
-    background-color: #202123;
-    color: #fffffff5;
-    border: 2px solid #202123bd;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.today {
+  height: 60%;
+  width: 35%;
+  background-color: #202123;
+  color: #fffffff5;
+  border: 2px solid #202123bd;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Today's Date Text Styles */
-.today-text{
-    font-size: 25px;
-    font-weight: 900;
+.today-text {
+  font-size: 25px;
+  font-weight: 900;
 }
 
 /* Mood Question Styles */
-.mood-question{
-    font-size: 30px;
-    font-weight: 400;
+.mood-question {
+  font-size: 30px;
+  font-weight: 400;
 }
 
 /* Today's Mood Styles */
-.today-mood{
-    font-weight: 900;
+.today-mood {
+  font-weight: 900;
 }
 
 /* All Moods Styles */
-.all-moods{
-    border-radius: 30px;
-    height: 85%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5dc57;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.037);
+.all-moods {
+  border-radius: 30px;
+  height: 85%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5dc57;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.037);
 }
 
 /* Mood Grid Styles */
 .mood-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* Three equal columns */
-    grid-template-rows: repeat(3, 1fr);  /* Three equal rows */
-    grid-gap: 0px;        /* Adjust as needed */
-    width: 100%;
-    height: 100%;
-    justify-items: center; /* Center horizontally */
-    align-items: center;   /* Center vertically */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  grid-template-rows: repeat(3, 1fr); /* Three equal rows */
+  grid-gap: 0px; /* Adjust as needed */
+  width: 100%;
+  height: 100%;
+  justify-items: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 /* Selected Mood Styles */
 .selected-mood {
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;  /* Important: Allow images to fill their grid cells */
-    height: 100%; /* Important: Allow images to fill their grid cells */
-    grid-column: 2 / span 1; /* Place in the middle column */
-    grid-row: 2 / span 1;    /* Place in the middle row */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Important: Allow images to fill their grid cells */
+  height: 100%; /* Important: Allow images to fill their grid cells */
+  grid-column: 2 / span 1; /* Place in the middle column */
+  grid-row: 2 / span 1; /* Place in the middle row */
 }
 
 /* Mood Option Image Styles */
 .options-img {
-    /* Remove width/height from here; let grid define size */
-    height: 70px;
-    width:70px;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer; /* Change the cursor to a pointer */
-    transition: transform 0.15s ease-in-out; /* Add a smooth transition */
+  /* Remove width/height from here; let grid define size */
+  height: 70px;
+  width: 70px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer; /* Change the cursor to a pointer */
+  transition: transform 0.15s ease-in-out; /* Add a smooth transition */
 }
 
 /* Mood Option Hover Effect */
 .options-img:hover {
-    transform: scale(1.1); /* Slightly scale up the image on hover */
+  transform: scale(1.1); /* Slightly scale up the image on hover */
 }
 
 /* Excited Mood Style */
-.excited-mood{
-    display: flex;
-    justify-self: flex-end;
-    align-self: flex-end;
+.excited-mood {
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
 }
 
 /* Angry Mood Style */
-.angry-mood{
-    display: flex;
-    justify-self: flex-start;
-    align-self: flex-end;
+.angry-mood {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-end;
 }
 
 /* Happy Mood Style */
-.happy-mood{
-    display: flex;
-    justify-self: flex-end;
-    align-self: flex-end;
+.happy-mood {
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
 }
 
 /* Neutral Mood Style */
-.neutral-mood{
-    display: flex;
-    justify-self: flex-start;
-    align-self: flex-start;
+.neutral-mood {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 
 /* Sad Mood Style */
-.sad-mood{
-    display: flex;
-    justify-self: flex-end;
-    align-self: flex-start;
+.sad-mood {
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-start;
 }
 
 /* Worried Mood Style */
-.worried-mood{
-    display: flex;
-    justify-self: flex-start;
-    align-self: flex-start;
+.worried-mood {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 
 /* Selected Image Styles */
 .selected-img {
-    padding: 5px;
-    border: 4px solid #202123;
-    border-radius: 30px;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;  /* Keeps aspect ratio and fits */
-    transition: opacity 0.5s ease-in-out;
+  padding: 5px;
+  border: 4px solid #202123;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Keeps aspect ratio and fits */
+  transition: opacity 0.5s ease-in-out;
 }
 
 /* Second Container Styles: Mood Indices */
-.second-container{
-    width: 100%;
-    height: 400px;
-    display:flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 20px;
+.second-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 /* Status Container Styles */
-.status{
-    position: relative; /* Add relative positioning for progress bars */
-    height: 100%;
-    width: 20%;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: rgb(238, 238, 241);
-    background-image: 
-        radial-gradient(circle at 16% 7%, #D50032B3 15%, transparent 35%), 
-        radial-gradient(circle at 40% 5%, #C0FFF9B3 3%, transparent 40%), 
-        radial-gradient(circle at 34% 95%, #ff9500 3%, transparent 40%);
-    background-blend-mode: overlay;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute space */
-    align-items: center;
+.status {
+  position: relative; /* Add relative positioning for progress bars */
+  height: 100%;
+  width: 20%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(238, 238, 241);
+  background-image: radial-gradient(
+      circle at 16% 7%,
+      #d50032b3 15%,
+      transparent 35%
+    ),
+    radial-gradient(circle at 40% 5%, #c0fff9b3 3%, transparent 40%),
+    radial-gradient(circle at 34% 95%, #ff9500 3%, transparent 40%);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space */
+  align-items: center;
 }
 
 /* Index Heading Styles */
-.index-heading{
-    height: 10%;
-    width: 100%;
-    background-color: #202123;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.index-heading {
+  height: 10%;
+  width: 100%;
+  background-color: #202123;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Index Heading Text Styles */
-.index-heading h3{
-    color: #f2f8f4;
+.index-heading h3 {
+  color: #f2f8f4;
 }
 
 /* Status Contents Styles */
 .status-contents {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    width: 100%;
-    height: 100%; /* Take up remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+  height: 100%; /* Take up remaining space */
 }
 
 /* Status Moods Styles */
-.status-moods{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.status-moods {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Index Percentage Styles */
-.index-percentage{
-    font-size: 20px;
-    font-weight: 600;
+.index-percentage {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Mood Image Styles */
-.mood-img{
-    padding: 5px;
-    border-radius: 30px;
-    width: 130px;
-    height: 130px;
+.mood-img {
+  padding: 5px;
+  border-radius: 30px;
+  width: 130px;
+  height: 130px;
 }
 
 /* Progress Bar Container Styles */
 .progress-bar {
-    position: absolute;
-    bottom: 20px;  /* Add padding at the bottom */
-    left: 20px;    /* Add padding on the left */
-    right: 20px;   /* Add padding on the right */
-    top: 20px;      /* Add padding on the top */
-    width: auto; /* Set the width to auto to fill the available space */
-    height: auto; /* Set the height to auto to fill the available space */
-    background-color: #0000000e;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-top: 50px;
+  position: absolute;
+  bottom: 20px; /* Add padding at the bottom */
+  left: 20px; /* Add padding on the left */
+  right: 20px; /* Add padding on the right */
+  top: 20px; /* Add padding on the top */
+  width: auto; /* Set the width to auto to fill the available space */
+  height: auto; /* Set the height to auto to fill the available space */
+  background-color: #0000000e;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 50px;
 }
 
 /* Progress Styles */
 .progress {
-    width: 100%; /* Ensure progress fills the width of the bar */
-    height: 0%;  /* Start from 0% height */
-    transition: height 0.5s ease; /* Change transition to height */
-    position: absolute; /* To align the progress to the bottom */
-    bottom: 0;
+  width: 100%; /* Ensure progress fills the width of the bar */
+  height: 0%; /* Start from 0% height */
+  transition: height 0.5s ease; /* Change transition to height */
+  position: absolute; /* To align the progress to the bottom */
+  bottom: 0;
 }
 
 /* Third Container Styles: Spotify and Graph */
-.third-container{
-    width: 100%;
-    height: 500px;
-    display:flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 20px;
+.third-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 /* Third Section Styles */
-.third{
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    width: 34.5%;
-    border-radius: 20px;
-    background-color: rgb(238, 238, 241);
-    background-image: 
-        radial-gradient(circle at 20% 10%, #00d527b3 5%, transparent 35%), 
-        radial-gradient(circle at 50% 10%, #C0FFF9B3 13%, transparent 40%), 
-        radial-gradient(circle at 40% 90%, #ff9500 3%, transparent 40%);
-    background-blend-mode: overlay;
-    padding: 30px;
+.third {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 34.5%;
+  border-radius: 20px;
+  background-color: rgb(238, 238, 241);
+  background-image: radial-gradient(
+      circle at 20% 10%,
+      #00d527b3 5%,
+      transparent 35%
+    ),
+    radial-gradient(circle at 50% 10%, #c0fff9b3 13%, transparent 40%),
+    radial-gradient(circle at 40% 90%, #ff9500 3%, transparent 40%);
+  background-blend-mode: overlay;
+  padding: 30px;
 }
 
 /* Spotify Header Styles */
-.spotify-header{
-    height: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.spotify-header {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Heading Div Styles */
-.Heading-div{
-    width: 85%;
-    background-color: #202123;
-    padding: 0px;
-    border-radius: 15px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.Heading-div {
+  width: 85%;
+  background-color: #202123;
+  padding: 0px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Heading Text Styles */
-#heading{
-    color: white;
-    font-size: 25px;
-    font-weight: 700;
+#heading {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 /* Tagline Styles */
-.tagline{
-    font-size: 15px;
-    font-weight: 700;
-    text-align: center;
+.tagline {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* Spotify Card Container Styles */
-.Spotify-card-container{
-    height: 85%;
-    display: flex;
+.Spotify-card-container {
+  height: 85%;
+  display: flex;
 }
 
 /* Graph Container Styles */
-.graph-container{
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 700;
-    background-image: url(./assets/graph-under-construction.png);
-    background-image: url(./assets/graph-under-construction.png);
-    background-repeat: no-repeat;
-    background-size: contain; 
-    background-position: center;
+.graph-container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  background-image: url(./assets/graph-under-construction.png);
+  background-image: url(./assets/graph-under-construction.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
-.graph-container span{
-    font-size: 60px;
-    font-weight: 900;
-    text-align: center;
+.graph-container span {
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* Media query for screens smaller than 1200px (larger tablets/small desktops) */
+@media (max-width: 1200px) {
+  .first-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .first {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query for screens smaller than 768px (typical tablets) */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 20px;
+  }
+
+  .first-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .first {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .second-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .status {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .index-heading h3 {
+    font-size: 16px;
+  }
+
+  .index-percentage {
+    font-size: 14px;
+  }
+
+  .third-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .third {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .graph-container span {
+    font-size: 30px;
+  }
+  .mood-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Progress Bar Styles */
+  .progress-bar {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #0000000e;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .progress {
+    width: 100%;
+    height: 0%;
+    transition: height 0.5s ease;
+    bottom: 0;
+  }
+  .status-contents {
+    height: 70%;
+  }
+
+  .second-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .status {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query for even smaller screens (typical phones) */
+@media (max-width: 480px) {
+  .today-text {
+    font-size: 20px;
+  }
+
+  .mood-question {
+    font-size: 24px;
+  }
+  .graph-container {
+    font-size: 15px;
+  }
+  .graph-container span {
+    font-size: 20px;
+  }
+  .second-container {
+    flex-direction: column;
+  }
+  .status {
+    width: 100%;
+  }
 }
