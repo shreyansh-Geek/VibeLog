@@ -14,6 +14,10 @@ VibeLog is a web application designed to help you track your emotions effortless
 *   **Local Storage:** Your data is stored locally in your browser, ensuring privacy and offline accessibility.
 *   **Visualization:** (Future Feature) Planned integration of graphical representations to visualize mood trends over extended durations.
 
+## 🚀 Try it Out!
+
+You can experience VibeLog live at: [https://vibe-log.vercel.app](https://vibe-log.vercel.app)
+
 ## 🚀 Getting Started
 
 1.  **Clone the Repository:**
