@@ -23,7 +23,7 @@ You can experience VibeLog live at: [https://vibe-log.vercel.app](https://vibe-l
 1.  **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/<your-username>/VibeLog.git
+    git clone https://github.com/shreyansh-Geek/VibeLog.git
     cd VibeLog
     ```
 
